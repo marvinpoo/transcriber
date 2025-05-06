@@ -1,0 +1,40 @@
+@import 'variables';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  font-family: $font-family-base;
+  line-height: $line-height-base;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: $spacing-md;
+  line-height: 1.2;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: $transition-base;
+  
+  &:hover {
+    opacity: 0.8;
+  }
+}

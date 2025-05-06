@@ -1,0 +1,77 @@
+@import '../variables';
+
+.api-key-form {
+  background: var(--color-surface);
+  padding: $spacing-lg;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  margin-bottom: $spacing-xl;
+  backdrop-filter: blur(8px);
+
+  &__status {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+    color: var(--color-secondary);
+
+    .status-content {
+      display: flex;
+      align-items: center;
+      gap: $spacing-md;
+    }
+
+    button {
+      width: 100%;
+      padding: $spacing-xs $spacing-md;
+      background: var(--color-accent);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: $transition-base;
+      border: 1px solid var(--color-border);
+
+      &:hover {
+        background: var(--color-secondary);
+        color: var(--color-surface);
+      }
+    }
+  }
+
+  &__input {
+    display: flex;
+    align-items: center;
+    gap: $spacing-md;
+    margin-bottom: $spacing-md;
+
+    input {
+      flex: 1;
+      padding: $spacing-sm;
+      border: 1px solid var(--color-border);
+      border-radius: 4px;
+      font-size: 1rem;
+      background: var(--color-surface);
+      color: var(--color-text);
+
+      &:focus {
+        outline: none;
+        border-color: var(--color-accent);
+      }
+    }
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    padding: $spacing-sm;
+    background: transparent;
+    color: var(--color-text);
+    border: 1px solid var(--color-accent);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: $transition-base;
+
+    &:hover {
+      background: var(--color-accent);
+      color: var(--color-surface);
+    }
+  }
+}

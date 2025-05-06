@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    path {
+      stroke: #FF5449;
+      stroke-width: 2;
+      stroke-linecap: round;
+    }
+    @media (prefers-color-scheme: dark) {
+      path {
+        stroke: #FF5449;
+      }
+    }
+  </style>
+  <path d="M4,16 Q7,16 10,10 T16,16 T22,19 T28,16" opacity="0.8" />
+  <path d="M4,16 Q7,16 10,19 T16,13 T28,16" opacity="0.6" />
+  <path d="M4,16 Q7,16 10,13 T16,19 T22,10 T28,16" opacity="0.4" />
+</svg>

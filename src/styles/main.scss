@@ -1,0 +1,20 @@
+@import 'variables';
+@import 'base';
+@import 'animations';
+@import 'utilities';
+
+// Components
+@import 'components/button';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/uploader';
+@import 'components/api-key-form';
+@import 'components/results';
+@import 'components/language-toggle';
+@import 'components/theme-toggle';
+@import 'components/ui-language-toggle';
+@import 'components/output-selector';
+@import 'components/logo-icon';
+
+// Pages
+@import 'pages/home';
